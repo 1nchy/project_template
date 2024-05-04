@@ -6,6 +6,8 @@ set(CMAKE_BUILD_TYPE "Debug")
 
 set(PROJECT_SOURCE_TARGET ${PROJECT_NAME}_source_target)
 
+add_executable(${PROJECT_NAME} main.cpp)
+
 add_subdirectory(third)
 if (THIRD_INCLUDE_LIST)
     include_directories(${THIRD_INCLUDE_LIST})
@@ -17,7 +19,6 @@ if (THIRD_LIB_LIST)
 endif()
 
 add_subdirectory(src)
-add_executable(${PROJECT_NAME} main.cpp)
 target_include_directories(${PROJECT_NAME}
     PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
