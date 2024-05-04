@@ -6,7 +6,7 @@ set(THIRD_LIB_LIST "")
 
 macro(add_third_libraries lib_name)
     message(STATUS "add third library: " ${lib_name})
-    if (NOT EXISTS(${lib_name}))
+    if (NOT EXISTS ${PROJECT_SOURCE_DIR}/${lib_name})
         message(FATAL_ERROR ${lib_name} " not found.")
     endif()
     add_subdirectory(${lib_name})
