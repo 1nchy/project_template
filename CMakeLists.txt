@@ -12,6 +12,9 @@ add_subdirectory(third)
 if (THIRD_INCLUDE_LIST)
     include_directories(${THIRD_INCLUDE_LIST})
 endif()
+if (THIRD_LIB_DIR_LIST)
+    link_directories(${THIRD_LIB_DIR_LIST})
+endif()
 if (THIRD_LIB_LIST)
     target_link_libraries(${PROJECT_NAME} 
         PUBLIC ${THIRD_LIB_LIST}
