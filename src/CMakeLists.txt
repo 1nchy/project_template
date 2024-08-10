@@ -1,4 +1,4 @@
-file(GLOB_RECURSE SOURCE_FILE "*.cpp")  # todo
+file(GLOB_RECURSE SOURCE_FILE "*.cpp")
 
 add_library(${PROJECT_SOURCE_TARGET} ${SOURCE_FILE})
 

@@ -25,9 +25,8 @@ macro(add_headonly_third_libraries lib_name)
     list(APPEND THIRD_INCLUDE_LIST ${PROJECT_SOURCE_DIR}/${lib_name}/include)
 endmacro(add_headonly_third_libraries)
 
-add_third_libraries(third_lib1)  # replace your third lib name
-add_third_libraries(third_lib2)  # replace your third lib name
-add_headonly_third_libraries(third_lib3)  # replace your third lib name
+add_third_libraries(<third_lib_name>)
+add_headonly_third_libraries(<headonly_third_lib_name>)
 
 set(THIRD_INCLUDE_LIST ${THIRD_INCLUDE_LIST} PARENT_SCOPE)
 set(THIRD_LIB_DIR_LIST ${THIRD_LIB_DIR_LIST} PARENT_SCOPE)
