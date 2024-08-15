@@ -6,22 +6,14 @@
 
 !/src
 !/src/*
-!/src/*/*
 !/include
 !/include/*
-!/include/*/*
 !/third
 !/third/*
 !/doc
 !/doc/*
-!/doc/module1/*
-!/doc/module2/*
 !/cmake
 !/cmake/.gitkeep
 
 !main.cpp
 !CMakeLists.txt
-
-!/.vscode
-!/.vscode/launch.json
-!/.vscode/tasks.json

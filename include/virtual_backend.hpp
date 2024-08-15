@@ -1,6 +1,0 @@
-#ifndef _ASP_VIRTUAL_BACKEND_HPP_
-#define _ASP_VIRTUAL_BACKEND_HPP_
-
-
-
-#endif // _ASP_VIRTUAL_BACKEND_HPP_
