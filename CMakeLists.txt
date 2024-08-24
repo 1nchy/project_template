@@ -25,7 +25,6 @@ add_third_libraries(<third_lib>)
 set(PROJECT_SOURCE_FILE main.cpp)
 file(GLOB_RECURSE PROJECT_SRC_FILE "src/*.cpp")
 list(APPEND PROJECT_SOURCE_FILE ${PROJECT_SRC_FILE})
-message(STATUS "source file: " ${PROJECT_SOURCE_FILE})
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_FILE})
 
 target_include_directories(${PROJECT_NAME}
