@@ -13,7 +13,7 @@
 !/doc
 !/doc/*
 !/cmake
-!/cmake/.gitkeep
+!/cmake/*
 
 !main.cpp
 !CMakeLists.txt
