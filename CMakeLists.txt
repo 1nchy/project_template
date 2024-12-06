@@ -20,7 +20,7 @@ macro(add_third_libraries lib_name)
     endif (${lib_name}_FOUND)
 endmacro(add_third_libraries)
 
-add_third_libraries(<third_lib>)
+# add_third_libraries(<third_lib>)
 
 set(PROJECT_SOURCE_FILE main.cpp)
 file(GLOB_RECURSE PROJECT_SRC_FILE "src/*.cpp")
